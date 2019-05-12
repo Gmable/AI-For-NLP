@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -48,9 +47,60 @@
         <h1>Bootstrap starter template</h1>
           <p class="lead">在下面的文本框中输入新闻.<br> 你将会得到新闻中人物的言论信息.<b><b>Try it now!</b></b></p>
       </div>
+        <div align="center" style="margin-top:30px">
+            <form method="POST" name = "form1">
+                <p>News Processing</p>
+                <textarea rows="10" cols="60" name="News" placeholder="请输入新闻"></textarea>
+                <p></p>
+                <input type="submit" value = "提交"/>
+                <p></p>
+                <table border = 1>
+                    {% for key, value in result.items() %}
+
+                        <tr>
+                            <th> {{ key }} </th>
+                            <td> {{ value }} </td>
+                        </tr>
+
+                    {% endfor %}
+                </table>
+            </form>
+        </div>
+        <h2>Our members</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="100" height="100">
+            <h3>萧磊</h3>
+            <p>零号小组组长，负责各项工作的安排与分工，本次项目中负责数据库方面。</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="100" height="100">
+            <h3>芊璇</h3>
+            <p>在本次项目中负责算法与后台部分。</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="100" height="100">
+            <h3>简畅丽</h3>
+            <p>在本次项目中负责算法与后台部分。</p>
+          </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="100" height="100">
+            <h3>王博</h3>
+            <p>在本次项目中负责前端部分。</p>
+          </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="100" height="100">
+            <h3>杨诗吟</h3>
+            <p>在本次项目中负责前端部分。</p>
+          </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="100" height="100">
+            <h3>高老师</h3>
+            <p>本项目指导老师。</p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
 
     </main><!-- /.container -->
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
